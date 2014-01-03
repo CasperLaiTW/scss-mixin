@@ -1,0 +1,12 @@
+/**
+ * 
+ * @authors Derek Liu (azraelxuan927@gmail.com)
+ * @date    2014-01-03 11:16:40
+ * @version 1.0.0.0
+ */
+
+@mixin opacity($opacity) {  // 透明度
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); // IE8
+}

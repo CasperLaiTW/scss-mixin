@@ -1,5 +1,9 @@
 @import "font/size";
+@import "clearfix/clearfix";
+@import "opacity/opacity";
 
 body{
     @include font-size(11px);
+    @include clearfix;
+    @include opacity(70);
 }
