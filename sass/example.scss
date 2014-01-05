@@ -3,7 +3,10 @@
 @import "opacity/opacity";
 
 body{
+    // this is auto calculate font size method.
     @include font-size(11px);
+    // this is clear float method.
     @include clearfix;
+    // this is opacity method.
     @include opacity(70);
 }
