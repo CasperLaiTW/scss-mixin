@@ -5,13 +5,15 @@
  * @version 1.0.0.0
  */
 
-@mixin font-size($size){
+@mixin font-size($size, $fixed: false){
     $baseSize: 12px;
     @if $size > $baseSize {
         font-size: $size;
     } @else {
         font-size: $size;
         -webkit-transform:scale($size / $baseSize);
-        display: inline-block;
+        @if($fixed){
+            display: inline-block;
+        }
     }
 }
