@@ -8,5 +8,5 @@ body{
     // this is clear float method.
     @include clearfix;
     // this is opacity method.
-    @include opacity(70);
+    @include opacity(.7);
 }
